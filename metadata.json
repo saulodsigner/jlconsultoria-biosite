@@ -1,0 +1,6 @@
+{
+  "name": "JL Consultoria - Assessoria e Consultoria Financeira",
+  "description": "Bio Site premium e editorial de alta sofisticação para a JL Consultoria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
