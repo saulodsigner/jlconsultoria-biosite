@@ -1,37 +1,21 @@
 import React from "react";
 import { Instagram, Phone } from "lucide-react";
 
-const jlLogo = "/logo.png";
-
 interface FooterProps {
   onOpenBooking: () => void;
   customLogo?: string | null;
 }
 
 export function JLFinanceLogo({ 
-  className = "h-14 sm:h-16",
-  customLogo
+  className = "text-2xl sm:text-3xl font-sans text-white font-medium select-none"
 }: { 
   className?: string;
   customLogo?: string | null;
 }) {
-  const finalLogo = (customLogo && customLogo.startsWith("data:image/")) ? customLogo : jlLogo;
   return (
-    <div className={`${className} flex items-center select-none`}>
-      <img
-        src={finalLogo}
-        alt="JL Assessoria e Consultoria Financeira"
-        className="h-full w-auto object-contain max-h-[64px]"
-        referrerPolicy="no-referrer"
-        onError={(e) => {
-          const target = e.currentTarget;
-          // Check if we already tried the fallback to avoid infinite loops
-          if (!target.dataset.fallbackTried) {
-            target.dataset.fallbackTried = "true";
-            target.src = jlLogo;
-          }
-        }}
-      />
+    <div className={`${className} flex items-center gap-1`}>
+      <span className="font-serif">JL</span>
+      <span className="font-serif italic text-[#D8AC28]">Consultoria</span>
     </div>
   );
 }
