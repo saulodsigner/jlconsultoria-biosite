@@ -25,7 +25,9 @@ export function JLFinanceLogo({
         referrerPolicy="no-referrer"
         onError={(e) => {
           const target = e.currentTarget;
-          if (target.src !== jlLogo) {
+          // Check if we already tried the fallback to avoid infinite loops
+          if (!target.dataset.fallbackTried) {
+            target.dataset.fallbackTried = "true";
             target.src = jlLogo;
           }
         }}
