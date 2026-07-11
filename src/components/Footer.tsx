@@ -1,7 +1,7 @@
 import React from "react";
 import { Instagram, Phone } from "lucide-react";
 // @ts-ignore
-import jlLogo from "../assets/logo.jpg";
+import jlLogo from "../assets/logo.png";
 
 interface FooterProps {
   onOpenBooking: () => void;
