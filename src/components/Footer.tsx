@@ -1,7 +1,7 @@
 import React from "react";
 import { Instagram, Phone } from "lucide-react";
 // @ts-ignore
-import jlLogo from "../assets/logo.png"; // Restored original high-quality logo asset
+import jlLogo from "../assets/logo.jpg";
 
 interface FooterProps {
   onOpenBooking: () => void;
@@ -23,6 +23,12 @@ export function JLFinanceLogo({
         alt="JL Assessoria e Consultoria Financeira"
         className="h-full w-auto object-contain max-h-[64px]"
         referrerPolicy="no-referrer"
+        onError={(e) => {
+          const target = e.currentTarget;
+          if (target.src !== jlLogo) {
+            target.src = jlLogo;
+          }
+        }}
       />
     </div>
   );
