@@ -38,8 +38,10 @@ export default function App() {
 
   useEffect(() => {
     const saved = localStorage.getItem("jl_custom_logo");
-    if (saved) {
+    if (saved && saved !== "null" && saved !== "undefined") {
       setCustomLogo(saved);
+    } else {
+      setCustomLogo(null);
     }
   }, []);
 

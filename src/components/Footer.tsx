@@ -15,10 +15,11 @@ export function JLFinanceLogo({
   className?: string;
   customLogo?: string | null;
 }) {
+  const finalLogo = (customLogo && customLogo !== "null" && customLogo !== "undefined") ? customLogo : jlLogo;
   return (
     <div className={`${className} flex items-center select-none`}>
       <img
-        src={customLogo || jlLogo}
+        src={finalLogo}
         alt="JL Assessoria e Consultoria Financeira"
         className="h-full w-auto object-contain max-h-[64px]"
         referrerPolicy="no-referrer"
