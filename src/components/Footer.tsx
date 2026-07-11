@@ -1,7 +1,7 @@
 import React from "react";
 import { Instagram, Phone } from "lucide-react";
 // @ts-ignore
-import jlLogo from "../assets/logo.png";
+import jlLogo from "../assets/logo.png"; // Restored original high-quality logo asset
 
 interface FooterProps {
   onOpenBooking: () => void;
