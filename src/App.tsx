@@ -38,7 +38,7 @@ export default function App() {
 
   useEffect(() => {
     const saved = localStorage.getItem("jl_custom_logo");
-    if (saved && saved !== "null" && saved !== "undefined") {
+    if (saved && saved.startsWith("data:image/")) {
       setCustomLogo(saved);
     } else {
       setCustomLogo(null);

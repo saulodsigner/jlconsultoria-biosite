@@ -15,7 +15,7 @@ export function JLFinanceLogo({
   className?: string;
   customLogo?: string | null;
 }) {
-  const finalLogo = (customLogo && customLogo !== "null" && customLogo !== "undefined") ? customLogo : jlLogo;
+  const finalLogo = (customLogo && customLogo.startsWith("data:image/")) ? customLogo : jlLogo;
   return (
     <div className={`${className} flex items-center select-none`}>
       <img
