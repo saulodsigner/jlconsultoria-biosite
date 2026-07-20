@@ -95,7 +95,7 @@ export default function App() {
       <Hero onOpenBooking={openDirectWhatsApp} />
 
       {/* 2. Infinite Corporate Editorial Marquee Ticker - Full Screen Width */}
-      <section id="ticker-section" className="relative w-full py-4 bg-[#1F4D79]/40 border-y border-white/5 overflow-hidden flex items-center my-6">
+      <section id="ticker-section" className="relative w-full py-4 bg-[#1F4D79]/40 backdrop-blur-md border-y border-white/5 overflow-hidden flex items-center mt-0 mb-6 z-10">
         <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#0F2A44] to-transparent z-10 pointer-events-none" />
         <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#0F2A44] to-transparent z-10 pointer-events-none" />
         
