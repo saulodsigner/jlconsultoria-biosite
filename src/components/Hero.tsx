@@ -92,6 +92,10 @@ export default function Hero({ onOpenBooking }: HeroProps) {
               <img
                 src={teamPortrait}
                 alt="JL Consultoria Sócias"
+                width={1856}
+                height={1611}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-auto object-contain block drop-shadow-[0_20px_50px_rgba(15,42,68,0.7)]"
                 referrerPolicy="no-referrer"
               />
