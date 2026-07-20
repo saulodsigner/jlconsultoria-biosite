@@ -116,6 +116,63 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                 referrerPolicy="no-referrer"
               />
               
+              {/* Floating Badge for Joicilene - Finanças */}
+              <motion.div
+                initial={{ opacity: 0, x: -20, y: 0 }}
+                animate={{ 
+                  opacity: 1, 
+                  x: 0,
+                  y: [0, -8, 0]
+                }}
+                transition={{ 
+                  opacity: { delay: 0.6, duration: 0.8 },
+                  x: { delay: 0.6, duration: 0.8 },
+                  y: {
+                    repeat: Infinity,
+                    duration: 5,
+                    ease: "easeInOut"
+                  }
+                }}
+                className="absolute left-5 sm:left-[8%] top-[44%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
+              >
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
+                  <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
+                  <div className="text-left">
+                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Joicilene</p>
+                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Finanças</p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Floating Badge for Suany - Gestão Comercial */}
+              <motion.div
+                initial={{ opacity: 0, x: 20, y: 0 }}
+                animate={{ 
+                  opacity: 1, 
+                  x: 0,
+                  y: [0, -8, 0]
+                }}
+                transition={{ 
+                  opacity: { delay: 0.8, duration: 0.8 },
+                  x: { delay: 0.8, duration: 0.8 },
+                  y: {
+                    repeat: Infinity,
+                    duration: 6,
+                    ease: "easeInOut",
+                    delay: 0.5
+                  }
+                }}
+                className="absolute right-5 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
+              >
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
+                  <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
+                  <div className="text-left">
+                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Suany</p>
+                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Gestão Comercial</p>
+                  </div>
+                </div>
+              </motion.div>
+              
               {/* Soft Gradient Fade overlay to prevent a harsh cut-off at the bottom */}
               <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#0F2A44] via-[#0F2A44]/80 to-transparent z-10 pointer-events-none" />
             </motion.div>
