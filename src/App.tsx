@@ -89,7 +89,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0F2A44] text-[#F4F6F9] selection:bg-[#D8AC28]/30 selection:text-white font-sans relative py-8 sm:py-12 md:py-16">
+    <div className="min-h-screen bg-[#0F2A44] text-[#F4F6F9] selection:bg-[#D8AC28]/30 selection:text-white font-sans relative py-8 sm:py-12 md:py-16 overflow-x-hidden">
       
       {/* 1. Hero Section */}
       <Hero onOpenBooking={openDirectWhatsApp} />
