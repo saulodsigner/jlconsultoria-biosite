@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { ArrowUpRight, Award, ChevronRight, TrendingUp, Sparkles, Building, Briefcase } from "lucide-react";
 // @ts-ignore
-import teamPortrait from "../assets/images/img1.png";
+import teamPortrait from "../assets/images/img1.webp";
 
 interface HeroProps {
   onOpenBooking: () => void;
