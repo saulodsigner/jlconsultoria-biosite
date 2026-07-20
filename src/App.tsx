@@ -3,8 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { 
   Sparkles, 
   ArrowDown, 
@@ -22,7 +21,7 @@ import {
 import Hero from "./components/Hero";
 import CardItem from "./components/CardItem";
 import Footer from "./components/Footer";
-import BookingWizard from "./components/BookingWizard";
+const BookingWizard = lazy(() => import("./components/BookingWizard"));
 import { 
   DiagnosticGraphic, 
   WhatsAppGraphic, 
@@ -242,12 +241,16 @@ export default function App() {
         customLogo={customLogo}
       />
 
-      {/* 7. Interactive Custom Scheduling Drawer / Modal */}
-      <BookingWizard
-        isOpen={isBookingOpen}
-        onClose={() => setIsBookingOpen(false)}
-        mode={bookingMode}
-      />
+      {/* 7. Interactive Custom Scheduling Drawer / Modal — carregado sob demanda (lazy) */}
+      {isBookingOpen && (
+        <Suspense fallback={null}>
+          <BookingWizard
+            isOpen={isBookingOpen}
+            onClose={() => setIsBookingOpen(false)}
+            mode={bookingMode}
+          />
+        </Suspense>
+      )}
 
       {/* Tailwind Marquee Keyframes Injected as Custom Style Block */}
       <style>{`
