@@ -22,17 +22,13 @@ export default function CardItem({
   graphicSvg,
 }: CardItemProps) {
   return (
-    <motion.div
+    <div
       id={`card-${id}`}
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.05 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
       className="group relative w-full rounded-[24px] bg-gradient-to-br from-[#1F4D79]/60 to-[#1F4D79]/30 border border-white/10 hover:border-white/20 shadow-xl shadow-black/10 backdrop-blur-md overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/20"
     >
-      {/* Background soft lighting details */}
-      <div className="absolute top-0 left-0 w-32 h-32 bg-white/2 rounded-full blur-2xl pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-48 h-48 bg-[#D8AC28]/5 rounded-full blur-3xl pointer-events-none" />
+      {/* Background soft lighting details - radial gradients for 100% performance without filter: blur */}
+      <div className="absolute top-0 left-0 w-32 h-32 bg-[radial-gradient(circle,_rgba(255,255,255,0.02)_0%,_transparent_70%)] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-48 h-48 bg-[radial-gradient(circle,_rgba(216,172,40,0.04)_0%,_transparent_70%)] rounded-full pointer-events-none" />
 
       {/* Main Container - Horizontal Layout on Desktop, Stacking on Tablet/Mobile */}
       <div className="p-6 sm:p-8 lg:p-10 flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-8">
@@ -85,6 +81,6 @@ export default function CardItem({
         </div>
 
       </div>
-    </motion.div>
+    </div>
   );
 }

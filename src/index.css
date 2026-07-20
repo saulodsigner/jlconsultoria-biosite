@@ -35,8 +35,8 @@
 }
 
 @keyframes pulse-slow {
-  0%, 100% { opacity: 0.15; transform: scale(1); }
-  50% { opacity: 0.35; transform: scale(1.1); }
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.35; }
 }
 
 @keyframes spin-slow {

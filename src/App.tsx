@@ -190,16 +190,12 @@ export default function App() {
         />
 
         {/* CARD 04 - Grande CTA Final (Agende uma Reunião) */}
-        <motion.div
+        <div
           id="card-cta-final"
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.05 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
           className="relative w-full rounded-[24px] bg-gradient-to-br from-[#1F4D79]/90 to-[#0F2A44] border border-[#D8AC28]/25 hover:border-[#D8AC28]/45 shadow-2xl overflow-hidden p-6 sm:p-8 lg:p-10 text-left group transition-all duration-300 hover:shadow-3xl hover:shadow-black/30"
         >
-          {/* Subtle Golden Glow behind final CTA */}
-          <div className="absolute -bottom-10 -right-10 w-96 h-96 bg-[#D8AC28]/10 rounded-full blur-[80px] pointer-events-none" />
+          {/* Subtle Golden Glow behind final CTA - radial gradient for 100% performance without filter: blur */}
+          <div className="absolute -bottom-10 -right-10 w-96 h-96 bg-[radial-gradient(circle,_rgba(216,172,40,0.12)_0%,_transparent_70%)] rounded-full pointer-events-none" />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center relative z-10">
             {/* Left Content */}
@@ -236,7 +232,7 @@ export default function App() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
 
       </main>
 
