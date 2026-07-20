@@ -92,14 +92,14 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               
               {/* Spinning Golden Abstract Star / Shape */}
-              <div className="absolute w-[360px] h-[360px] border border-[#D8AC28]/10 rounded-full animate-spin-slow" />
+              <div className="hidden sm:block absolute w-[360px] h-[360px] border border-[#D8AC28]/10 rounded-full animate-spin-slow" />
               
               {/* Elegant organic rotating ellipses */}
-              <div className="absolute w-[460px] h-[300px] border border-white/5 rounded-[100%] rotate-45 animate-float-slow" />
-              <div className="absolute w-[300px] h-[440px] border border-[#D8AC28]/5 rounded-[100%] -rotate-45 animate-float-medium" />
+              <div className="hidden sm:block absolute w-[460px] h-[300px] border border-white/5 rounded-[100%] rotate-45 animate-float-slow" />
+              <div className="hidden sm:block absolute w-[300px] h-[440px] border border-[#D8AC28]/5 rounded-[100%] -rotate-45 animate-float-medium" />
               
-              {/* Pure Soft Background Blur glow */}
-              <div className="absolute w-80 h-80 bg-[#D8AC28]/10 rounded-full blur-[80px] animate-pulse-slow" />
+              {/* Pure Soft Background Blur glow - Smaller and static on mobile */}
+              <div className="absolute w-80 h-80 bg-[#D8AC28]/10 rounded-full blur-[60px] sm:blur-[80px] sm:animate-pulse-slow" />
             </div>
 
             {/* Loose Portrait Image without limiting box - Large scale and elegant bottom fade */}
@@ -107,6 +107,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+              style={{ willChange: "transform, opacity" }}
               className="relative w-full max-w-[680px] sm:max-w-[720px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 -mb-12 sm:-mb-16 lg:-mb-16 mt-10 lg:mt-0 scale-[1.25] sm:scale-100 origin-bottom"
             >
               <img
@@ -133,6 +134,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     ease: "easeInOut"
                   }
                 }}
+                style={{ willChange: "transform, opacity" }}
                 className="absolute left-5 sm:left-[8%] top-[44%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
               >
                 <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
@@ -162,6 +164,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     delay: 0.5
                   }
                 }}
+                style={{ willChange: "transform, opacity" }}
                 className="absolute right-5 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
               >
                 <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">

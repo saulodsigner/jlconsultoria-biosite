@@ -100,7 +100,7 @@ export default function App() {
         <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#0F2A44] to-transparent z-10 pointer-events-none" />
         
         {/* Scrolling text chain */}
-        <div className="flex whitespace-nowrap animate-[marquee_25s_linear_infinite] text-[11px] uppercase tracking-[0.25em] font-medium text-white/50">
+        <div style={{ willChange: "transform" }} className="flex whitespace-nowrap animate-[marquee_25s_linear_infinite] text-[11px] uppercase tracking-[0.25em] font-medium text-white/50">
           <span className="mx-8 flex items-center gap-3">
             <Sparkles className="w-3.5 h-3.5 text-[#D8AC28]" />
             ESTRATÉGIA DE ESCALA
