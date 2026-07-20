@@ -20,44 +20,33 @@
 }
 
 @keyframes float-slow {
-  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
-  50% { transform: translate3d(0, -15px, 0) rotate(1deg); }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
 }
 
 @keyframes float-medium {
-  0%, 100% { transform: translate3d(0, 0, 0) rotate(0deg); }
-  50% { transform: translate3d(0, -10px, 0) rotate(-0.5deg); }
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(-1deg); }
 }
 
 @keyframes float-fast {
-  0%, 100% { transform: translate3d(0, 0, 0); }
-  50% { transform: translate3d(0, -6px, 0); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
 }
 
 @keyframes pulse-slow {
-  0%, 100% { opacity: 0.15; transform: scale3d(1, 1, 1); }
-  50% { opacity: 0.35; transform: scale3d(1.05, 1.05, 1); }
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(1.1); }
 }
 
 @keyframes spin-slow {
-  from { transform: translate3d(0, 0, 0) rotate(0deg); }
-  to { transform: translate3d(0, 0, 0) rotate(360deg); }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes glow {
-  0%, 100% { filter: drop-shadow(0 0 5px rgba(216,172,40,0.15)); }
-  50% { filter: drop-shadow(0 0 12px rgba(216,172,40,0.35)); }
-}
-
-/* Global hardware acceleration for custom animated background elements */
-.animate-float-slow,
-.animate-float-medium,
-.animate-float-fast,
-.animate-spin-slow,
-.animate-pulse-slow {
-  will-change: transform, opacity;
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(216,172,40,0.1)); }
+  50% { filter: drop-shadow(0 0 15px rgba(216,172,40,0.4)); }
 }
 
 /* Custom Scrollbar */

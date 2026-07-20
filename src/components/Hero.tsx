@@ -107,7 +107,6 @@ export default function Hero({ onOpenBooking }: HeroProps) {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-              style={{ willChange: "transform, opacity" }}
               className="relative w-full max-w-[680px] sm:max-w-[720px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 -mb-12 sm:-mb-16 lg:-mb-16 mt-10 lg:mt-0 scale-[1.25] sm:scale-100 origin-bottom"
             >
               <img
@@ -134,7 +133,6 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     ease: "easeInOut"
                   }
                 }}
-                style={{ willChange: "transform, opacity" }}
                 className="absolute left-5 sm:left-[8%] top-[44%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
               >
                 <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
@@ -164,7 +162,6 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     delay: 0.5
                   }
                 }}
-                style={{ willChange: "transform, opacity" }}
                 className="absolute right-5 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
               >
                 <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">

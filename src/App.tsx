@@ -100,7 +100,7 @@ export default function App() {
         <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#0F2A44] to-transparent z-10 pointer-events-none" />
         
         {/* Scrolling text chain */}
-        <div style={{ willChange: "transform" }} className="flex whitespace-nowrap animate-[marquee_25s_linear_infinite] text-[11px] uppercase tracking-[0.25em] font-medium text-white/50">
+        <div className="flex whitespace-nowrap animate-[marquee_25s_linear_infinite] text-[11px] uppercase tracking-[0.25em] font-medium text-white/50">
           <span className="mx-8 flex items-center gap-3">
             <Sparkles className="w-3.5 h-3.5 text-[#D8AC28]" />
             ESTRATÉGIA DE ESCALA
@@ -192,10 +192,10 @@ export default function App() {
         {/* CARD 04 - Grande CTA Final (Agende uma Reunião) */}
         <motion.div
           id="card-cta-final"
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-15px" }}
-          transition={{ duration: 0.4 }}
+          viewport={{ once: true, amount: 0.05 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
           className="relative w-full rounded-[24px] bg-gradient-to-br from-[#1F4D79]/90 to-[#0F2A44] border border-[#D8AC28]/25 hover:border-[#D8AC28]/45 shadow-2xl overflow-hidden p-6 sm:p-8 lg:p-10 text-left group transition-all duration-300 hover:shadow-3xl hover:shadow-black/30"
         >
           {/* Subtle Golden Glow behind final CTA */}

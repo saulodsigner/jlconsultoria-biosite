@@ -24,10 +24,10 @@ export default function CardItem({
   return (
     <motion.div
       id={`card-${id}`}
-      initial={{ opacity: 0, y: 15 }}
+      initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-15px" }}
-      transition={{ duration: 0.4 }}
+      viewport={{ once: true, amount: 0.05 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
       className="group relative w-full rounded-[24px] bg-gradient-to-br from-[#1F4D79]/60 to-[#1F4D79]/30 border border-white/10 hover:border-white/20 shadow-xl shadow-black/10 backdrop-blur-md overflow-hidden transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/20"
     >
       {/* Background soft lighting details */}
