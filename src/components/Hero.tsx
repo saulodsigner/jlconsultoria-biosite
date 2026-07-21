@@ -88,7 +88,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             </div>
 
             {/* Loose Portrait Image without limiting box - Large scale and elegant bottom fade */}
-            <div className="relative w-full max-w-[680px] sm:max-w-[720px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 mt-10 lg:mt-0 origin-bottom">
+            <div className="relative w-full max-w-[800px] sm:max-w-[720px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 mt-10 lg:mt-0 origin-bottom">
               <img
                 src={teamPortrait}
                 alt="JL Consultoria Sócias"
