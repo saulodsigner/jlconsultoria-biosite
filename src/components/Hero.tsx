@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowUpRight, Award, ChevronRight, TrendingUp, Sparkles, Building, Briefcase } from "lucide-react";
 // @ts-ignore
-import teamPortrait from "../assets/images/img1.webp";
+import teamPortraitWebp from "../assets/images/img1.webp";
+// @ts-ignore
+import teamPortraitJpg from "../assets/images/team_portrait_1784566524855.jpg";
 
 interface HeroProps {
   onOpenBooking: () => void;
 }
 
 export default function Hero({ onOpenBooking }: HeroProps) {
+  const [imgSrc, setImgSrc] = useState(teamPortraitWebp);
   return (
     <section id="hero-section" className="relative pt-12 pb-0 overflow-visible">
       {/* Decorative Sophisticated Glows in Background - Using radial-gradient for 100% performance without expensive blur filters */}
@@ -90,14 +93,18 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             {/* Loose Portrait Image without limiting box - Large scale and elegant bottom fade */}
             <div className="relative w-full max-w-[680px] sm:max-w-[720px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 -mb-12 sm:-mb-16 lg:-mb-16 mt-10 lg:mt-0 scale-[1.25] sm:scale-100 origin-bottom">
               <img
-                src={teamPortrait}
+                src={imgSrc}
+                onError={() => {
+                  if (imgSrc !== teamPortraitJpg) {
+                    setImgSrc(teamPortraitJpg);
+                  }
+                }}
                 alt="JL Consultoria Sócias"
                 width={1856}
                 height={1611}
                 fetchPriority="high"
                 decoding="async"
                 className="w-full h-auto object-contain block drop-shadow-[0_20px_50px_rgba(15,42,68,0.7)]"
-                referrerPolicy="no-referrer"
               />
               
               {/* Floating Badge for Joicilene - Finanças */}
