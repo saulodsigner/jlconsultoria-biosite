@@ -92,10 +92,6 @@ export default function Hero({ onOpenBooking }: HeroProps) {
               <img
                 src={teamPortrait}
                 alt="JL Consultoria Sócias"
-                width={1856}
-                height={1611}
-                fetchPriority="high"
-                decoding="async"
                 className="w-full h-auto object-contain block drop-shadow-[0_20px_50px_rgba(15,42,68,0.7)]"
                 referrerPolicy="no-referrer"
               />
@@ -114,16 +110,17 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                 }}
                 className="absolute left-5 sm:left-[8%] top-[44%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
               >
-                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-lg border border-white/15 shadow-xl">
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
                   <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
                   <div className="text-left">
-                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Joicilene</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Joicilene Lemos</p>
+                    <p className="text-[6.5px] sm:text-[8px] text-white/55 uppercase tracking-wider font-medium font-mono leading-none mt-0.5">Especialista em</p>
                     <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Finanças</p>
                   </div>
                 </div>
               </motion.div>
 
-              {/* Floating Badge for Suany - Gestão Comercial */}
+              {/* Floating Badge for Suanny - Gestão Comercial */}
               <motion.div
                 animate={{ 
                   y: [0, -6, 0]
@@ -138,10 +135,11 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                 }}
                 className="absolute right-5 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
               >
-                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-lg border border-white/15 shadow-xl">
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
                   <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
                   <div className="text-left">
-                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Suany</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Suanny Castro</p>
+                    <p className="text-[6.5px] sm:text-[8px] text-white/55 uppercase tracking-wider font-medium font-mono leading-none mt-0.5">Especialista em</p>
                     <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Gestão Comercial</p>
                   </div>
                 </div>
