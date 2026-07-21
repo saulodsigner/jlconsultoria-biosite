@@ -112,13 +112,13 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     ease: "easeInOut"
                   }
                 }}
-                className="absolute left-5 sm:left-[8%] top-[44%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
+                className="absolute left-4 sm:left-[8%] top-[42%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
               >
-                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
-                  <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-xl border border-white/20 shadow-xl">
+                  <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
                   <div className="text-left">
-                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Joicilene</p>
-                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Finanças</p>
+                    <p className="text-xs sm:text-sm font-semibold text-white tracking-wide leading-tight">Joicilene Lemos</p>
+                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Especialista em Finanças</p>
                   </div>
                 </div>
               </motion.div>
@@ -136,13 +136,13 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     delay: 0.5
                   }
                 }}
-                className="absolute right-5 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
+                className="absolute right-4 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
               >
-                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/90 backdrop-blur-md border border-white/15 shadow-xl">
-                  <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-xl border border-white/20 shadow-xl">
+                  <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
                   <div className="text-left">
-                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Suany</p>
-                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Gestão Comercial</p>
+                    <p className="text-xs sm:text-sm font-semibold text-white tracking-wide leading-tight">Suanny Castro</p>
+                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Especialista em Gestão comercial</p>
                   </div>
                 </div>
               </motion.div>
