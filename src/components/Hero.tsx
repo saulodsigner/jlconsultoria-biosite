@@ -16,7 +16,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
       <div className="absolute bottom-[-10%] left-[-5%] w-[300px] h-[300px] bg-[radial-gradient(circle,_rgba(31,77,121,0.18)_0%,_transparent_70%)] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 sm:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center lg:items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center lg:items-center">
           
           {/* Left Column - Content (Single parent animation to prevent layout thrashing on mount) */}
           <motion.div
