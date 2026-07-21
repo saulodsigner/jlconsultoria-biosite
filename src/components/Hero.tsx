@@ -1,17 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { ArrowUpRight, Award, ChevronRight, TrendingUp, Sparkles, Building, Briefcase } from "lucide-react";
 // @ts-ignore
-import teamPortraitWebp from "../assets/images/img1.webp";
-// @ts-ignore
-import teamPortraitJpg from "../assets/images/team_portrait_1784566524855.jpg";
+import teamPortrait from "../assets/images/img1.webp";
 
 interface HeroProps {
   onOpenBooking: () => void;
 }
 
 export default function Hero({ onOpenBooking }: HeroProps) {
-  const [imgSrc, setImgSrc] = useState(teamPortraitWebp);
   return (
     <section id="hero-section" className="relative pt-12 pb-0 overflow-visible">
       {/* Decorative Sophisticated Glows in Background - Using radial-gradient for 100% performance without expensive blur filters */}
@@ -93,18 +90,14 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             {/* Loose Portrait Image without limiting box - Large scale and elegant bottom fade */}
             <div className="relative w-full max-w-[680px] sm:max-w-[720px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 -mb-12 sm:-mb-16 lg:-mb-16 mt-10 lg:mt-0 scale-[1.25] sm:scale-100 origin-bottom">
               <img
-                src={imgSrc}
-                onError={() => {
-                  if (imgSrc !== teamPortraitJpg) {
-                    setImgSrc(teamPortraitJpg);
-                  }
-                }}
+                src={teamPortrait}
                 alt="JL Consultoria Sócias"
                 width={1856}
                 height={1611}
                 fetchPriority="high"
                 decoding="async"
                 className="w-full h-auto object-contain block drop-shadow-[0_20px_50px_rgba(15,42,68,0.7)]"
+                referrerPolicy="no-referrer"
               />
               
               {/* Floating Badge for Joicilene - Finanças */}
@@ -119,13 +112,13 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     ease: "easeInOut"
                   }
                 }}
-                className="absolute left-4 sm:left-[8%] top-[42%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
+                className="absolute left-5 sm:left-[8%] top-[44%] sm:top-[46%] z-20 pointer-events-auto shadow-2xl"
               >
-                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-xl border border-white/20 shadow-xl">
-                  <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-lg border border-white/15 shadow-xl">
+                  <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
                   <div className="text-left">
-                    <p className="text-xs sm:text-sm font-semibold text-white tracking-wide leading-tight">Joicilene Lemos</p>
-                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Especialista em Finanças</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Joicilene</p>
+                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Finanças</p>
                   </div>
                 </div>
               </motion.div>
@@ -143,13 +136,13 @@ export default function Hero({ onOpenBooking }: HeroProps) {
                     delay: 0.5
                   }
                 }}
-                className="absolute right-4 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
+                className="absolute right-5 sm:right-[8%] top-[54%] sm:top-[58%] z-20 pointer-events-auto shadow-2xl"
               >
-                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1.5 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-xl border border-white/20 shadow-xl">
-                  <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
+                <div className="flex items-center gap-1.5 sm:gap-2.5 px-2 sm:px-4 py-1 sm:py-2.5 rounded-lg sm:rounded-2xl bg-[#0F2A44]/75 backdrop-blur-lg border border-white/15 shadow-xl">
+                  <div className="w-1 sm:w-2 h-1 sm:h-2 rounded-full bg-[#D8AC28] animate-pulse shrink-0" />
                   <div className="text-left">
-                    <p className="text-xs sm:text-sm font-semibold text-white tracking-wide leading-tight">Suanny Castro</p>
-                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Especialista em Gestão comercial</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-white tracking-wide leading-tight">Suany</p>
+                    <p className="text-[8px] sm:text-[10px] text-[#D8AC28] uppercase tracking-wider font-semibold font-mono leading-none mt-0.5">Gestão Comercial</p>
                   </div>
                 </div>
               </motion.div>
