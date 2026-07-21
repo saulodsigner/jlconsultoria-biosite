@@ -88,7 +88,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
             </div>
 
             {/* Loose Portrait Image without limiting box - Large scale and elegant bottom fade */}
-<div className="relative w-full max-w-[800px] sm:max-w-[560px] md:max-w-[620px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 mt-0 lg:mt-0 origin-bottom">
+<div className="relative w-full max-w-[560px] sm:max-w-[560px] md:max-w-[620px] lg:max-w-[680px] xl:max-w-[780px] flex items-end justify-center pointer-events-none z-0 mt-0 lg:mt-0 origin-bottom">
   <img
     src={teamPortrait}
     alt="JL Consultoria Sócias"
@@ -96,7 +96,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
     height={1611}
     fetchPriority="high"
     decoding="async"
-    className="w-full h-auto min-h-[520px] object-cover object-top sm:min-h-0 sm:object-contain sm:object-center block drop-shadow-[0_20px_50px_rgba(15,42,68,0.7)]"
+    className="w-full h-auto object-contain block drop-shadow-[0_20px_50px_rgba(15,42,68,0.7)]"
     referrerPolicy="no-referrer"
   />
               
